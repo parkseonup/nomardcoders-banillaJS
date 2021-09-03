@@ -56,8 +56,8 @@ function handleSubmitLogin(event) {
         localStorage.setItem("name", loginValue);
         login.classList.add(HIDDEN);
         header.classList.add("user_access");
-        user.innerText = loginValue;
         header.classList.remove(HIDDEN);
+        user.innerText = loginValue;
     }
 }
 
