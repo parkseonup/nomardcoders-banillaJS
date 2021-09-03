@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>노마드코더 바닐라 JS-박선우</title>
+
+    <!--font awesome cdn-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> 
+
+    <!-- src -->
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div class="login">
+        <form class="login_form">
+            <input type="text" id="login_input" class="basic_input" maxlength="8" />
+            <label for="login_input" class="login_label">
+                <i class="login_label_icon fas fa-user">Enter your name</i>
+            </label>
+            <button type="submit" class="basic_btn">Login</button>
+        </form>
+        <!-- login //-->
+    </div>
+
+    <header>
+        <h1 class="user hidden"></h1>
+        <ul class="environment">
+            <li class="geoloction">한국</li>
+            <li class="weather">맑음</li>
+            <li class="time">오후 4:50</li>
+        </ul>
+    </header>
+    
+    <!-- script -->
+    <script src="src/login.js"></script>
+    <script src="src/environment.js"></script>
+    <script src="src/todo.js"></script>
+</body>
+</html>
