@@ -57,7 +57,7 @@ function handleSubmitLogin(event) {
         login.classList.add(HIDDEN);
         header.classList.add("user_access");
         user.innerText = loginValue;
-        user.classList.remove(HIDDEN);
+        header.classList.remove(HIDDEN);
     }
 }
 
