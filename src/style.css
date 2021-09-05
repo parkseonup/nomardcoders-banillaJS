@@ -74,7 +74,8 @@ li {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.close_btn {
+.delete_btn {
+    padding: 0;
     background-color: transparent;
 }
 
@@ -210,4 +211,9 @@ li {
     background-color: #fff;
     border-radius: 50%;
     transform: translateY(-50%);
+}
+
+.todo_list i {
+    display: block;
+    padding: 16px 30px 16px;
 }

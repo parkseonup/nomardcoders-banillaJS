@@ -57,7 +57,9 @@ function handleSubmitLogin(event) {
         login.classList.add(HIDDEN);
         header.classList.add("user_access");
         header.classList.remove(HIDDEN);
-        user.innerText = loginValue;
+        user.innerText = localStorage.getItem("name");
+        handleSubmitGeolocation(); // environment.js 실행
+        document.querySelector(".todo_wrap").classList.remove(HIDDEN);
     }
 }
 

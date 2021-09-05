@@ -27,5 +27,3 @@ function onGeoError() {
 function handleSubmitGeolocation() {
     navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
 }
-
-loginForm.addEventListener("submit", handleSubmitGeolocation);
