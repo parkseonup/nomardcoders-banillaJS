@@ -165,8 +165,8 @@ li {
     width: 100%;
 }
 
-.todo_wrawp .basic_input {
-    width: 100%;
+.todo_form .basic_input {
+    padding-left: 30px;
 }
 
 .todo_list {
