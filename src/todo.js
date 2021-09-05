@@ -44,7 +44,7 @@ function handleSubmitTodo(event) {
         todoInput.value = "";
         const todoValueOj = {
             text: todoValue,
-            id: Date.now(),
+            id: Date.now()
         }
         todos.push(todoValueOj);
         paintTodo(todoValueOj);
