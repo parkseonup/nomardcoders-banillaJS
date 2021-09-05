@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
-    <div class="login">
+    <section class="login">
+        <h2 class="sr_only">Login form</h2>
         <form class="login_form">
             <input type="text" id="login_input" class="basic_input" maxlength="8" />
             <label for="login_input" class="login_label">
@@ -22,16 +23,34 @@
             <button type="submit" class="basic_btn">Login</button>
         </form>
         <!-- login //-->
-    </div>
+    </section>
 
     <header class="hidden">
         <h1 class="user"></h1>
         <ul class="environment">
-            <li class="geoloction">한국</li>
-            <li class="weather">맑음</li>
-            <li class="time">오후 4:50</li>
+            <li class="geoloction"></li>
+            <li class="weather"></li>
+            <li class="time"></li>
         </ul>
     </header>
+
+    <section class="todo_wrap">
+        <h2>
+            <label for="todo_input" class="todo_label">To do</label>
+        </h2>
+        <form class="todo_form">
+            <input type="text" id="todo_input" class="basic_input" />
+            <button class="basic_btn">Plus</button>
+        </form>
+        <ul class="todo_list">
+            <li>
+                오늘 뭐하지
+                <button class="close_btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </li>
+        </ul>
+    </section>
     
     <!-- script -->
     <script src="src/login.js"></script>

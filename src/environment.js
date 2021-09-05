@@ -24,4 +24,8 @@ function onGeoError() {
     alert("Can't find you.");
 }
 
-navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
+function handleSubmitGeolocation() {
+    navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
+}
+
+loginForm.addEventListener("submit", handleSubmitGeolocation);
