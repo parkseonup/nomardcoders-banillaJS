@@ -15,7 +15,8 @@ function saveTodo() {
 function handleClickDelete(event) {
     const deleteLi = event.target.parentElement.parentElement;
     deleteLi.remove();
-    todos = todos.filter((todoRemove) => todoRemove.id !== parseInt(deleteLi.id));
+    //todos = todos.filter((todoRemove) => todoRemove.id !== parseInt(deleteLi.id));
+    todos = todos?.filter((todoRemove) => todoRemove.id !== parseInt(deleteLi.id));
     saveTodo();
 }
 
@@ -46,7 +47,8 @@ function handleSubmitTodo(event) {
             text: todoValue,
             id: Date.now()
         };
-        todos.push(todoValueOj);
+        //todos.push(todoValueOj);
+        todos?.push(todoValueOj);
         paintTodo(todoValueOj);
         saveTodo();
     } else {
