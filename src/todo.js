@@ -40,6 +40,7 @@ function paintTodo(todoValue) {
 
 function handleSubmitTodo(event) {
     event.preventDefault(); // submit시 새로고침 안하게
+    saveTodo();
     const todoValue = todoInput.value;
     if(todoValue !== "") {
         todoInput.value = "";
