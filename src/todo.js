@@ -45,7 +45,7 @@ function handleSubmitTodo(event) {
         const todoValueOj = {
             text: todoValue,
             id: Date.now()
-        }
+        };
         todos.push(todoValueOj);
         paintTodo(todoValueOj);
         saveTodo();
