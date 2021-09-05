@@ -1,24 +1,17 @@
-// 위치, 날씨, 시계
+// 위치, 날씨
+//const linkAPI = https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API%20key};
 
-//위치
-const geoloction = document.querySelector(".geoloction");
-
-// 날씨
-const weather = document.querySelector(".weather");
-
-// 시계
-const time = document.querySelector(".time");
-
-function currentTime() {
-    const date = new Date();
-    const hours = date.getHours();
-    const min = date.getMinutes();
-    const sec = date.getSeconds();
-    const minStr = String(min);
-    const secStr = String(sec);
-    const minPad = minStr.padStart(2, "0");
-    const secPad = secStr.padStart(2, "0");
-    time.innerText = `${hours}:${minPad}:${secPad}`;
+function onGeoOk() {
+    console.log(position);
 }
 
-setInterval(currentTime, 1000);
+function onGeoError() {
+    alert("Can't find your location");
+}
+
+navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
+
+
+const geoloction = document.querySelector(".geoloction");
+const weather = document.querySelector(".weather");
+
