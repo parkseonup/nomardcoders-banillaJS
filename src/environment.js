@@ -4,11 +4,11 @@
 function onGeoOk(position) {
     console.log(position);
     const lat = position.coords.latitude;
-    const log = position.coords.longitude;
+    const lon = position.coords.longitude;
 
     //openweathermap.org API
     const key = "1129fffe00ecb17bfb0cb3409162ddb2";
-    const url = `api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}`;
     console.log(url);
 }
 
